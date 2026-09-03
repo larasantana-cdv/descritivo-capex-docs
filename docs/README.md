@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# CAPEX
+# CAPEX LT - N2
 
 <details>
 
@@ -49,3 +49,12 @@ O objetivo dessa análise é entender o comportamento de cada uma das variáveis
 
 </details>
 
+{% tabs %}
+{% tab title="Aquisições" %}
+
+{% endtab %}
+
+{% tab title="Second Tab" %}
+
+{% endtab %}
+{% endtabs %}
