@@ -32,7 +32,14 @@ $$
 * $$Q_{se}$$: Radiação solar total corrigida (W/m²)
 
 2.2. Perda de Calor por Convecção  $$Q_C$$
-
+Convecção Forçada — Baixa Velocidade ($Q_{c1}$)
+$$
+Q_{c1} = \left[ 1 + 1{,}281 \cdot \left( \frac{D \cdot \rho_f \cdot v}{\mu_f} \right)^{0{,}52} \right] \cdot k_f \cdot (T_c - T_a) \cdot K_{\text{angle}}
+$$
+Convecção Forçada — Alta Velocidade ($Q_{c2}$)
+$$
+Q_{c2} = 0{,}321 \cdot \left( \frac{D \cdot \rho_f \cdot v}{\mu_f} \right)^{0{,}6} \cdot k_f \cdot (T_c - T_a) \cdot K_{\text{angle}}
+$$
 ```
     Se I_max < I_proj:
         REJEITAR CABO (Superaquece)
