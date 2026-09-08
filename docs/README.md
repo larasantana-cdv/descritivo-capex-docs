@@ -50,11 +50,12 @@ O objetivo dessa análise é entender o comportamento de cada uma das variáveis
 </details>
 
 {% tabs %}
-{% tab title="Aquisições" %}
-
+{% tab title="Dimensionamento" %}
+[cabo-condutor.md](capex-lt-n2/cabo-condutor.md "mention")
 {% endtab %}
 
 {% tab title="Second Tab" %}
 
 {% endtab %}
 {% endtabs %}
+
