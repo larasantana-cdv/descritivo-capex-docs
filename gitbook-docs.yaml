@@ -3,6 +3,19 @@ site:
   title: DevWiki.com
   structure:
     - type: section
+      key: section-2
+      title: Projeto Conceitual
+      path: projeto-conceitual
+      children:
+        - type: space
+          key: space-2
+          title: Projeto Conceitual
+          path: projeto-conceitual
+          default: true
+          draft: true
+          content:
+            directory: ./projeto-conceitual
+    - type: section
       key: section-1
       title: CAPEX
       path: devwiki.com
@@ -16,16 +29,3 @@ site:
           default: true
           content:
             directory: ./docs
-    - type: section
-      key: section-2
-      title: Projeto Conceitual
-      path: projeto-conceitual
-      children:
-        - type: space
-          key: space-2
-          title: Projeto Conceitual
-          path: projeto-conceitual
-          default: true
-          draft: true
-          content:
-            directory: ./projeto-conceitual
