@@ -11,16 +11,16 @@ I_{\text{proj}} = \frac{P}{\sqrt{3} \cdot V \cdot \cos\phi} \cdot F_{\text{seg}}
 $$
 
 **Onde:**
-- $P$ = potência a transmitir (W ou MW)
-- $V$ = tensão nominal de linha (V ou kV)
-- $\cos\phi$ = fator de potência
-- $F_{\text{seg}}$ = fator de segurança (ex.: $1{,}15$), para acomodar crescimento de carga
+- $$P$$ = potência a transmitir (W ou MW)
+- $$V$$ = tensão nominal de linha (V ou kV)
+- $$\cos\phi$$ = fator de potência
+- $$F_{\text{seg}}$$ = fator de segurança (ex.: $$1{,}15$$), para acomodar crescimento de carga
 
 ---
 
 ## Passo 2 — Filtro por Ampacidade (Critério Térmico)
 
-Para **cada cabo do catálogo**, calcular a ampacidade máxima $I_{\max}$ a partir do balanço térmico (IEEE Std 738), no qual o calor gerado deve igualar o calor dissipado:
+Para **cada cabo do catálogo**, calcular a ampacidade máxima $$I_{\max}$$ a partir do balanço térmico (IEEE Std 738), no qual o calor gerado deve igualar o calor dissipado:
 
 $$
 Q_{\text{Joule}} + Q_s = Q_c + Q_r
@@ -31,24 +31,24 @@ $$
 $$
 
 **Onde:**
-- $Q_{\text{Joule}} = I^2 \cdot R$ = aquecimento por efeito Joule
-- $Q_s$ = ganho de calor por radiação solar
-- $Q_c$ = perda de calor por convecção
-- $Q_r$ = perda de calor por radiação
+- $$Q_{\text{Joule}} = I^2 \cdot R$$ = aquecimento por efeito Joule
+- $$Q_s$$ = ganho de calor por radiação solar
+- $$Q_c$$ = perda de calor por convecção
+- $$Q_r$$ = perda de calor por radiação
 
-Isolando $I$ na equação, obtém-se $I_{\max}$ para a temperatura máxima admissível do condutor.
+Isolando $$I$$ na equação, obtém-se $$I_{\max}$$ para a temperatura máxima admissível do condutor.
 
-#### 2.1 Ganho de Calor Solar ($Q_s$)
+#### 2.1 Ganho de Calor Solar ($$Q_s$$)
 
 $$
 Q_s = \alpha \cdot Q_{se} \cdot \sin(\theta) \cdot A'
 $$
 
 **Onde:**
-- $\alpha$ = coeficiente de absortividade solar do condutor ($0{,}23$ para cabo novo a $0{,}91$ para cabo envelhecido/enegrecido)
-- $Q_{se}$ = fluxo de calor solar e do céu, corrigido pela altitude do local (tabelado na norma em função da altitude solar $H_c$)
-- $\theta$ = ângulo efetivo de incidência dos raios solares sobre o condutor
-- $A'$ = área projetada do condutor por unidade de comprimento (numericamente igual ao diâmetro externo $D$)
+- $$\alpha$$ = coeficiente de absortividade solar do condutor ($$0{,}23$$ para cabo novo a $$0{,}91$$ para cabo envelhecido/enegrecido)
+- $$Q_{se}$$ = fluxo de calor solar e do céu, corrigido pela altitude do local (tabelado na norma em função da altitude solar $$H_c$$)
+- $$\theta$$ = ângulo efetivo de incidência dos raios solares sobre o condutor
+- $$A'$$ = área projetada do condutor por unidade de comprimento (numericamente igual ao diâmetro externo $$D$$)
 
 O ângulo de incidência é obtido por:
 
@@ -57,11 +57,11 @@ $$
 $$
 
 **Onde:**
-- $H_c$ = altitude solar (ângulo do sol acima do horizonte)
-- $Z_c$ = azimute solar
-- $Z_l$ = azimute da linha de transmissão
+- $$H_c$$ = altitude solar (ângulo do sol acima do horizonte)
+- $$Z_c$$ = azimute solar
+- $$Z_l$$ = azimute da linha de transmissão
 
-#### 2.2 Perda de Calor por Convecção ($Q_c$)
+#### 2.2 Perda de Calor por Convecção ($$Q_c$$)
 
 Calculam-se três hipóteses e adota-se o **maior valor** entre elas (convecção natural e as duas formas de convecção forçada):
 
@@ -97,26 +97,26 @@ $$
 K_{\text{angle}} = 1{,}194 - \cos(\phi) + 0{,}194 \cdot \cos(2\phi) + 0{,}368 \cdot \sin(2\phi)
 $$
 
-- $D$ = diâmetro externo do condutor
-- $\rho_f$ = densidade do ar (função da temperatura de filme e altitude)
-- $V_w$ = velocidade do vento
-- $\mu_f$ = viscosidade dinâmica do ar
-- $k_f$ = condutividade térmica do ar
-- $\phi$ = ângulo entre a direção do vento e o eixo do condutor
-- $T_c$ = temperatura do condutor (máxima admissível)
-- $T_a$ = temperatura ambiente
+- $$D$$ = diâmetro externo do condutor
+- $$\rho_f$$ = densidade do ar (função da temperatura de filme e altitude)
+- $$V_w$$ = velocidade do vento
+- $$\mu_f$$ = viscosidade dinâmica do ar
+- $$k_f$$ = condutividade térmica do ar
+- $$\phi$$ = ângulo entre a direção do vento e o eixo do condutor
+- $$T_c$$ = temperatura do condutor (máxima admissível)
+- $$T_a$$ = temperatura ambiente
 
-#### 2.3 Perda de Calor por Radiação ($Q_r$)
+#### 2.3 Perda de Calor por Radiação ($$Q_r$$)
 
 $$
 Q_r = 17{,}8 \cdot D \cdot \varepsilon \cdot \left[ \left( \frac{T_c + 273}{100} \right)^4 - \left( \frac{T_a + 273}{100} \right)^4 \right]
 $$
 
 **Onde:**
-- $\varepsilon$ = coeficiente de emissividade do condutor ($0{,}23$ cabo novo a $0{,}91$ cabo envelhecido)
-- $D$, $T_c$, $T_a$ = conforme definidos acima
+- $$\varepsilon$$ = coeficiente de emissividade do condutor ($$0{,}23$$ cabo novo a $$0{,}91$$ cabo envelhecido)
+- $$D$$, $$T_c$$, $$T_a$$ = conforme definidos acima
 
-> ⚠️ **Atenção na implementação:** as constantes numéricas de $Q_c$, $Q_r$ e $Q_s$ variam conforme o sistema de unidades adotado (SI ou unidades inglesas) e a edição da norma IEEE Std 738 utilizada. Antes de codificar, confirme as constantes, unidades de entrada ($D$ em m/mm/pol, $V_w$ em m/s/ft/s etc.) e as tabelas de $Q_{se}$ na versão específica da norma que será referenciada no projeto.
+> ⚠️ **Atenção na implementação:** as constantes numéricas de $$Q_c$$, $$Q_r$$ e $$Q_s$$ variam conforme o sistema de unidades adotado (SI ou unidades inglesas) e a edição da norma IEEE Std 738 utilizada. Antes de codificar, confirme as constantes, unidades de entrada ($$D$$ em m/mm/pol, $$V_w$$ em m/s/ft/s etc.) e as tabelas de $$Q_{se}$$ na versão específica da norma que será referenciada no projeto.
 
 **Critério de rejeição:**
 
@@ -144,9 +144,9 @@ $$
 $$
 
 **Onde:**
-- $L$ = comprimento da linha (km)
-- $R_{\text{ac}}$ = resistência CA do condutor ($\Omega$/km)
-- $X$ = reatância indutiva do condutor ($\Omega$/km)
+- $$L$$ = comprimento da linha (km)
+- $$R_{\text{ac}}$$ = resistência CA do condutor ($$\Omega$$/km)
+- $$X$$ = reatância indutiva do condutor ($$\Omega$$/km)
 
 **Critério de rejeição:**
 
@@ -193,8 +193,8 @@ $$
 $$
 
 **Onde:**
-- $N_{\text{subcondutores}}$ = número de subcondutores por fase (feixe)
-- O fator $3$ representa as três fases do sistema trifásico
+- $$N_{\text{subcondutores}}$$ = número de subcondutores por fase (feixe)
+- O fator $$3$$ representa as três fases do sistema trifásico
 
 ### 5.2 Custo das Perdas Anuais (OPEX)
 
@@ -203,9 +203,9 @@ $$
 $$
 
 **Onde:**
-- $8760$ = número de horas em um ano
-- $F_{\text{carga}}$ = fator de carga médio anual
-- $\text{Custo}_{\text{MWh}}$ = custo unitário da energia
+- $$8760$$ = número de horas em um ano
+- $$F_{\text{carga}}$$ = fator de carga médio anual
+- $$\text{Custo}_{\text{MWh}}$$ = custo unitário da energia
 
 ### 5.3 Custo Total em Valor Presente Líquido (VPL)
 
@@ -214,8 +214,8 @@ $$
 $$
 
 **Onde:**
-- $N$ = horizonte de análise (vida útil do projeto, em anos)
-- $\text{VPL}(\cdot)$ traz o fluxo anual de perdas a valor presente, considerando a taxa de desconto do projeto
+- $$N$$ = horizonte de análise (vida útil do projeto, em anos)
+- $$\text{VPL}(\cdot)$$ traz o fluxo anual de perdas a valor presente, considerando a taxa de desconto do projeto
 
 **Critério de decisão:**
 
