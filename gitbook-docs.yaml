@@ -12,7 +12,6 @@ site:
           title: Projeto Conceitual
           path: projeto-conceitual
           default: true
-          draft: true
           content:
             directory: ./projeto-conceitual
     - type: section
