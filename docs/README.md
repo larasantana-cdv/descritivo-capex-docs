@@ -39,6 +39,8 @@ $$Potência :: x \in R$$        $$\text{Comprimento da Linha} :: y \in R$$    $$
 
 </details>
 
+
+
 <details>
 
 <summary>MATRIZ DE SENSIBILIDADE</summary>
@@ -58,4 +60,42 @@ O objetivo dessa análise é entender o comportamento de cada uma das variáveis
 
 {% endtab %}
 {% endtabs %}
+
+{% columns %}
+{% column width="50%" %}
+{% content-ref url="capex-lt-n2/1.-engenharia-e-gerenciamento.md" %}
+[1.-engenharia-e-gerenciamento.md](capex-lt-n2/1.-engenharia-e-gerenciamento.md)
+{% endcontent-ref %}
+
+{% content-ref url="capex-lt-n2/3.-mobilizacao-e-canteiro.md" %}
+[3.-mobilizacao-e-canteiro.md](capex-lt-n2/3.-mobilizacao-e-canteiro.md)
+{% endcontent-ref %}
+
+{% content-ref url="capex-lt-n2/5.-fundacoes.md" %}
+[5.-fundacoes.md](capex-lt-n2/5.-fundacoes.md)
+{% endcontent-ref %}
+
+{% content-ref url="capex-lt-n2/7.-fornecimento-e-montagem-de-cabos.md" %}
+[7.-fornecimento-e-montagem-de-cabos.md](capex-lt-n2/7.-fornecimento-e-montagem-de-cabos.md)
+{% endcontent-ref %}
+{% endcolumn %}
+
+{% column width="50%" %}
+{% content-ref url="capex-lt-n2/2.-estudos-e-ensaios-de-campo.md" %}
+[2.-estudos-e-ensaios-de-campo.md](capex-lt-n2/2.-estudos-e-ensaios-de-campo.md)
+{% endcontent-ref %}
+
+{% content-ref url="capex-lt-n2/4.-acessos-e-supressao-vegetal.md" %}
+[4.-acessos-e-supressao-vegetal.md](capex-lt-n2/4.-acessos-e-supressao-vegetal.md)
+{% endcontent-ref %}
+
+{% content-ref url="capex-lt-n2/6.-fornecimento-e-montagem-de-estruturas.md" %}
+[6.-fornecimento-e-montagem-de-estruturas.md](capex-lt-n2/6.-fornecimento-e-montagem-de-estruturas.md)
+{% endcontent-ref %}
+
+{% content-ref url="capex-lt-n2/8.-acessorios.md" %}
+[8.-acessorios.md](capex-lt-n2/8.-acessorios.md)
+{% endcontent-ref %}
+{% endcolumn %}
+{% endcolumns %}
 

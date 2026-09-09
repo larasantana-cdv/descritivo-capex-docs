@@ -1,2 +1,0 @@
-# Cabo Para-Raios
-
